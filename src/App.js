@@ -2,6 +2,7 @@ import './App.css';
 import { nanoid } from 'nanoid'
 import { useState } from 'react';
 import NoteList from './components/NotesLists';
+import Search from './components/Search';
  
 
 function App() {
@@ -36,9 +37,15 @@ function App() {
     setNotes(newNotes)
   }
 
+  const deleteNote = (id) =>{
+    const newNotes = notes.filter((note) => note.id !== id)
+    setNotes(newNotes)
+  }
+
   return (
     <div className='container'>
-      <NoteList notes={notes} handleAddNote={addNote}/>
+      <Search />
+      <NoteList notes={notes} handleAddNote={addNote} handleDeleteNote={deleteNote}/>
     </div>
   );
 }
