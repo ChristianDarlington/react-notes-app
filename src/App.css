@@ -1,3 +1,17 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
 .note{
   background-color: #DAF7A6;
   border-radius: 10px;
@@ -21,6 +35,8 @@
 
 .dark-mode h1{
   color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container{
@@ -30,6 +46,8 @@
   padding-left: 15px;
   padding-right: 15px;
   min-height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .note-list{
